@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Shopping Cart</title>
+    <link rel="shortcut icon" href="/img/icon.webp" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container">
+        <div class="row">
+          <div class="four columns">
+            <img src="img/logo.png" id="logo" />
+          </div>
+          <div class="two columns u-pull-right">
+            <ul>
+              <li class="submenu">
+                <img src="img/cart.png" id="img-carrito" />
+                <div id="carrito">
+                  <table id="lista-carrito" class="u-full-width">
+                    <thead>
+                      <tr>
+                        <th>Picture</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+
+                  <a href="#" id="vaciar-carrito" class="button u-full-width"
+                    >Empty cart</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="six columns">
+            <div class="contenido-hero">
+              <h1>BUY SOMETHING OLD</h1>
+              <form action="#" id="busqueda" method="post" class="formulario">
+                <input
+                  class="u-full-width"
+                  type="text"
+                  placeholder="What would you like to buy?"
+                  id="buscador"
+                />
+                <input
+                  type="submit"
+                  id="submit-buscador"
+                  class="submit-buscador"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="barra">
+      <div class="container">
+        <div class="row">
+          <div class="four columns icono icono1">
+            <p>
+              20,000 Vintage products <br />
+              Explore the past
+            </p>
+          </div>
+          <div class="four columns icono icono2">
+            <p>
+              Buy everything <br />
+              An excelent price
+            </p>
+          </div>
+          <div class="four columns icono icono3">
+            <p>
+              Free shipping <br />
+              Live in the past
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="lista-cursos" class="container">
+      <h1 id="encabezado" class="encabezado">Products</h1>
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <img src="img/prod1.webp" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Vynil Player 1997</h4>
+              <p>Jahir Noriega</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="1"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="img/prod2.webp" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Film Camera</h4>
+              <p>Jahir Noriega</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="2"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="img/prod3.webp" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Cassette Player</h4>
+              <p>Jahir Noriega</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="3"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <!--.row-->
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <img src="img/prod4.png" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>iPod Classic</h4>
+              <p>Jahir Noriega</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="4"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="img/prod5.jpeg" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>iMac</h4>
+              <p>Jahir Noriega</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="5"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="img/prod6.png" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>WalkMan</h4>
+              <p>Jahir Noriega</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="6"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <!--.row-->
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <img src="img/prod7.jpeg" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Game Boy</h4>
+              <p>Jahir Noriega</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="7"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="img/prod8.jpeg" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Nintendo 64</h4>
+              <p>Jahir Noriega</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="8"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="img/prod9.jpeg" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Classic Speaker</h4>
+              <p>Jahir Noriega</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="9"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <!--.row-->
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <img src="img/prod10.jpg" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>90's iMac'</h4>
+              <p>Jahir Noriega</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="10"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="img/prod11.jpeg" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Vintage VHS</h4>
+              <p>Jahir Noriega</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="11"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="img/prod12.png" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Vintage TELEVISION</h4>
+              <p>Jahir Noriega</p>
+              <img src="img/estrellas.png" />
+              <p class="precio">$200 <span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="12"
+                >Add to Cart</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <!--.row-->
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
